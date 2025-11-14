@@ -11,18 +11,27 @@
         <li><router-link to="/contact" exact-active-class="active">Contact</router-link></li>
       </ul>
     </nav>
+    <div class="cart">
+      <shopping-cart class="cart-icon"/>
+    </div>
   </header>
 </template>
 
 <script setup>
+import { ShoppingCart } from 'lucide-vue-next';
 </script>
 
 <style scoped>
+
 .header {
-  background-color: #5a189a;
-  color: white;
-  padding: 1rem 2rem;
-  position: fixed;
+  display: flex;
+  background-color: #ffffff;
+  padding: 12px 16px;
+  height: 60px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -38,28 +47,43 @@
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 3.1rem;
   margin: 0;
-  padding: 0;
+  align-items: center;
 }
 
-.nav-links a {
-  color: white;
+.nav-links  {
+  color: rgb(43, 39, 39);
+  font-size: larger;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease, border-bottom 0.3s ease;
   padding-bottom: 0.2rem;
+  padding-left: 132px;
 }
 
-.nav-links a:hover {
-  color: #d0bfff;
+.nav-links :hover {
+  color: #f3bb05;
 }
 
-/* Active link */
 .active,
 .router-link-exact-active {
-  font-weight: bold;
-  border-bottom: 2px solid #FFD700;
-  color: #FFD700;
+  font-weight: semi-bold;
+  font-size: 19px;
+  color: #FED233;
+}
+.cart{
+  padding-right:22px;
+}
+.cart-icon {
+  width: 28px;
+  height: 28px;
+  color: #2b2727;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: #f3bb05;
 }
 </style>

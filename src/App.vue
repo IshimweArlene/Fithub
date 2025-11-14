@@ -4,16 +4,7 @@ import Header from './components/Pages/Header.vue'
 
 <template>
   <Header />
-  <main class="page-content">
+  <main class="pt-[80px]">
     <RouterView />
   </main>
 </template>
-
-<style>
-html, body, #app {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-}
-.page-content {
-  padding-top: 80px;
-}
-</style>
