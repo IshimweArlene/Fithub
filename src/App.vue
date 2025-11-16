@@ -1,10 +1,10 @@
 <script setup>
-import Header from './components/Pages/Header.vue'
+import Header from './components/Header.vue'
 </script>
 
 <template>
   <Header />
-  <main class="pt-[80px]">
+  <main class="pt-[60px]">
     <RouterView />
   </main>
 </template>

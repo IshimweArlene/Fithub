@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --header-height: 80px;
@@ -12,8 +14,8 @@ body {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
 }
 
-/* Active router link styles */
 .active,
 .router-link-exact-active {
-  @apply font-bold border-b-2 border-[#FFD700] text-[#FFD700];
+  font-weight: 700;   
+  color: #facc15;      
 }

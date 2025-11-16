@@ -37,6 +37,7 @@ import { ShoppingCart } from 'lucide-vue-next';
   width: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  margin-bottom: 20px;
 }
 
 .nav {
